@@ -1,4 +1,10 @@
-/* Abstracts */ /* Fonts */
+/* Abstracts */ /* Color */
+/* Fonts size */
+/* Line height */
+/* Font familly */
+/* Width */
+/* Padding */
+/* Fonts */
 /* Vendors */
 html {
   line-height: 1.15; /* 1 */
@@ -306,6 +312,10 @@ template {
 }
 
 /* Base */
+body {
+  background: black;
+}
+
 /*Basic styles*/
 html {
   font-size: 100%;
