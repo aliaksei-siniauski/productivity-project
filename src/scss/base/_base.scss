@@ -1,3 +1,9 @@
 body {
-  background: black;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-space-between;
+  min-height: 100vh;
+  font-family: $main-ff;
+  @include font($main-size, $main-line-height);
+  background: $light-color;
 }

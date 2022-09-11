@@ -1,0 +1,29 @@
+h1 {
+  font-family: $second-ff;
+  @include font($hero-size, $hero-line-height);
+  color: $header-color;
+}
+
+h2 {
+  font-family: inherit;
+  @include font($section-size, $section-line-height);
+  color: $header-color;
+}
+
+h3 {
+  font-family: inherit;
+  @include font($tag-text-size, $tag-text-line-height);
+  color: $header-color;
+}
+
+h4 {
+  font-family: inherit;
+  @include font($main-size, $second-line-height);
+  color: $header-color;
+}
+
+h5 {
+  font-family: inherit;
+  @include font($contact-link-size, $contact-link-line-height);
+  color: $header-color;
+}

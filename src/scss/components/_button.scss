@@ -1,0 +1,18 @@
+.button {
+  @extend %inline-block;
+  font-family: inherit;
+  @include font($main-size, $button-line-height, $semi-bold);
+  border-radius: $button-radius;
+  background: none;
+  border: none;
+  @extend %cursor;
+  @extend %transition;
+  &--border {
+    color: $button-second-color;
+    border: 1px solid $button-border-color;
+  }
+  &--background {
+    color: $light-color;
+    background: $accent-color;
+  }
+}

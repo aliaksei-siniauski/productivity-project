@@ -5,6 +5,30 @@
 /* Width */
 /* Padding */
 /* Fonts */
+.button {
+  display: inline-block;
+}
+
+body {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+}
+
+body {
+  justify-content: space-between;
+}
+
+.button {
+  transition: ease-in-out 0.5s;
+}
+
+.button {
+  cursor: pointer;
+}
+
 /* Vendors */
 html {
   line-height: 1.15; /* 1 */
@@ -313,7 +337,13 @@ template {
 
 /* Base */
 body {
-  background: black;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  background: #ffffff;
 }
 
 /*Basic styles*/
@@ -413,8 +443,72 @@ article {
     scroll-behavior: auto !important;
   }
 }
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.4rem;
+  color: #2f281e;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.6rem;
+  color: #2f281e;
+}
+
+h3 {
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  color: #2f281e;
+}
+
+h4 {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: #2f281e;
+}
+
+h5 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #2f281e;
+}
+
 /*Utilities  */
 /* Components */
+.button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.2rem;
+  border-radius: 0.4rem;
+  background: none;
+  border: none;
+}
+.button--border {
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+}
+.button--background {
+  color: #ffffff;
+  background: #ff9900;
+}
+
 /* Layout  */
 
 /*# sourceMappingURL=main.css.map */

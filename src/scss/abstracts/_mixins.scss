@@ -1,5 +1,12 @@
 /* Fonts */
 
+@mixin font($size, $height, $weight: $bold, $style: normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+}
+
 @mixin columns($width) {
   @extend %flex-main;
   @extend %justify-space-between;
