@@ -33,18 +33,25 @@
         <!-- close logo -->
         <nav class="navigation header__nav">
           <ul class="list">
-            <li class="list__item"><a class="list__link" href="#"> Home</a></li>
             <li class="list__item">
-              <a class="list__link" href="#">Service</a>
+              <a class="list__link" href="#home"> Home</a>
             </li>
-            <li class="list__item"><a class="list__link" href="#">About</a></li>
             <li class="list__item">
-              <a class="list__link" href="#">Product</a>
+              <a class="list__link" href="#service">Service</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#about">About</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#product">Product</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
         <!-- close nav -->
-        <div class="header__button">
+        <div class="header__buttons">
           <button class="button button--border">Sign In</button>
           <button class="button button--background">Sign Up</button>
         </div>
@@ -52,5 +59,37 @@
       </div>
       <!-- close container -->
     </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h2 class="hero__title">The Design Thinking superpowers</h2>
+            <p class="hero__text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <div class="hero__buttons">
+              <button class="button button--background"></button>
+              <a class="link-button" href="#">
+                <span class="icon icon__play"></span>
+                <span class="link-button__content">Watch the Video</span>
+              </a>
+            </div>
+          </div>
+          <!-- hero__content -->
+          <img
+            class="hero__img"
+            src="src/images/hero.png"
+            width="643"
+            height="495"
+            alt="hero"
+          />
+          <!-- close hero__content -->
+        </div>
+      </section>
+      <section id="services" class="tools"></section>
+      <section id="product" class="strategis"></section>
+      <section id="contact" class="contact"></section>
+    </main>
   </body>
 </html>
