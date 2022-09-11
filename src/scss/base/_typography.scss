@@ -18,12 +18,12 @@ h3 {
 
 h4 {
   font-family: inherit;
-  @include font($main-size, $second-line-height);
+  @include font($service-title-size, $service-line-height);
   color: $header-color;
 }
 
 h5 {
   font-family: inherit;
-  @include font($contact-link-size, $contact-link-line-height);
+  @include font($contact-link-size, $service-line-height);
   color: $header-color;
 }
