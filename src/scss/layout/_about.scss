@@ -1,0 +1,36 @@
+.about {
+  padding: 3rem 0 10rem 0;
+}
+
+.about__description {
+  margin: 0 0 4.5rem;
+  @include font($main-size, $second-line-height, $regular);
+}
+
+.worker {
+  position: relative;
+  @extend %flex;
+  padding: 3.5rem;
+  line-height: $second-line-height;
+}
+
+.worker__name {
+  margin: 0;
+  font-weight: $bold;
+}
+
+.worker__job {
+  margin: 0;
+  @include font($profile-social-size, $second-line-height, $regular);
+}
+
+.worker__email {
+  font-size: $profile-social-size;
+  color: $link-color;
+}
+
+.worker__photo {
+  position: absolute;
+  top: 2rem;
+  right: -5.2rem;
+}

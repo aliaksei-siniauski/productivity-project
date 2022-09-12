@@ -10,7 +10,7 @@
   display: inline-block;
 }
 
-.layout-3-columns, .layout-4-columns, .hero__buttons, .hero__container, .header__container, .hamburger, .tags, .list, body {
+.layout-3-columns, .layout-4-columns, .worker, .hero__buttons, .hero__container, .header__container, .hamburger, .tags, .list, body {
   display: flex;
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-.tag, .button, h4, h3, h2, body {
+.tag, .button, h5, h4, h3, h2, body {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -508,7 +508,6 @@ h4 {
 }
 
 h5 {
-  font-family: inherit;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -781,6 +780,48 @@ h5 {
 
 .product__tags {
   padding: 0 0 2.6rem;
+}
+
+.about {
+  padding: 3rem 0 10rem 0;
+}
+
+.about__description {
+  margin: 0 0 4.5rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.worker {
+  position: relative;
+  padding: 3.5rem;
+  line-height: 2.6rem;
+}
+
+.worker__name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.worker__job {
+  margin: 0;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.worker__email {
+  font-size: 1.4rem;
+  color: #1943ef;
+}
+
+.worker__photo {
+  position: absolute;
+  top: 2rem;
+  right: -5.2rem;
 }
 
 .layout-4-columns > * {
