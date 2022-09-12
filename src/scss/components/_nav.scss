@@ -1,0 +1,18 @@
+.list {
+  @extend %flex;
+  @extend %al-items-center;
+}
+
+.list__item {
+  padding: 0 0.85rem;
+  @include font($nav-size, $main-line-height, $regular);
+}
+
+.list__link {
+  color: $header-color;
+  @extend %transition;
+  @extend %cursor;
+  &:hover {
+    color: $accent-color;
+  }
+}

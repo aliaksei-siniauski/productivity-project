@@ -28,6 +28,7 @@ $contact-link-size: 2rem;
 $profile-social-size: 1.4rem;
 $hero-size: 4.4rem;
 $tag-text-size: 2.4rem;
+$nav-size: 1.5rem;
 
 $button-radius: 0.4rem;
 /* Line height */
@@ -51,8 +52,13 @@ $regular: 400;
 
 /* Width */
 
-$container-width: 1230px;
+$content-width: 1230px;
 
 /* Padding */
 
 $padding-inline-main: 1.5rem;
+
+/* Media */
+$tablet-width: 769px;
+$mobile-big-width: 426px;
+$mobile-small-width: 321px;

@@ -1,18 +1,24 @@
 .button {
   @extend %inline-block;
+  padding: 1.1rem 2.5rem 1.3rem;
   font-family: inherit;
   @include font($main-size, $button-line-height, $semi-bold);
-  border-radius: $button-radius;
   background: none;
   border: none;
+  border-radius: $button-radius;
   @extend %cursor;
   @extend %transition;
   &--border {
     color: $button-second-color;
     border: 1px solid $button-border-color;
+    @extend %transition;
+    &:hover {
+      background: $button-border-color;
+    }
   }
   &--background {
     color: $light-color;
     background: $accent-color;
+    border: 1px solid $accent-color;
   }
 }

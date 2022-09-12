@@ -1,6 +1,6 @@
 h1 {
   font-family: $second-ff;
-  @include font($hero-size, $hero-line-height);
+  @include font($hero-size, $hero-line-height, $bold);
   color: $header-color;
 }
 

@@ -4,28 +4,33 @@
 /* Font familly */
 /* Width */
 /* Padding */
+/* Media */
 /* Fonts */
 .button {
   display: inline-block;
 }
 
-body {
+.header__container, .hamburger, .list, body {
   display: flex;
 }
 
-body {
+.hamburger, body {
   flex-direction: column;
 }
 
-body {
+.header__container, body {
   justify-content: space-between;
 }
 
-.button {
+.header__container, .hamburger, .list {
+  align-items: center;
+}
+
+.list__link, .button--border, .button {
   transition: ease-in-out 0.5s;
 }
 
-.button {
+.hamburger, .list__link, .button {
   cursor: pointer;
 }
 
@@ -490,24 +495,66 @@ h5 {
 }
 
 /*Utilities  */
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
 /* Components */
 .button {
+  padding: 1.1rem 2.5rem 1.3rem;
   font-family: inherit;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2.2rem;
-  border-radius: 0.4rem;
   background: none;
   border: none;
+  border-radius: 0.4rem;
 }
 .button--border {
   color: #173a56;
   border: 1px solid #bcd0e5;
 }
+.button--border:hover {
+  background: #bcd0e5;
+}
 .button--background {
   color: #ffffff;
   background: #ff9900;
+  border: 1px solid #ff9900;
+}
+
+.list__item {
+  padding: 0 0.85rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.list__link {
+  color: #2f281e;
+}
+.list__link:hover {
+  color: #ff9900;
+}
+
+@media (min-width: 1440px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__line {
+  width: 31px;
+  height: 3px;
+  background: #173a56;
+  border-radius: 0.5rem;
+}
+.hamburger__line:not(:last-child) {
+  margin-bottom: 0.8rem;
 }
 
 .section-subtile {
@@ -515,5 +562,13 @@ h5 {
 }
 
 /* Layout  */
+.header {
+  padding: 1.6rem 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__buttons.button:not(:last-child) {
+  margin-right: 1.4rem;
+}
 
 /*# sourceMappingURL=main.css.map */
