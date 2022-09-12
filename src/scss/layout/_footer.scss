@@ -1,0 +1,26 @@
+.footer {
+  padding: 6rem 0 7rem 0;
+}
+
+.footer__container {
+  @extend %flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding: 0 0 0 15.2rem;
+}
+
+.footer-navigation__title {
+  margin: 0 0 1.5rem 0;
+  @include font($contact-link-size, $service-line-height, $semi-bold);
+}
+
+.footer-navigation__link {
+  @extend %font-second;
+  @include font($main-size, $tag-text-line-height, $regular);
+  @extend %transition;
+  &:hover {
+    color: $accent-color;
+  }
+}
