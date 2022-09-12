@@ -1,25 +1,24 @@
 h1 {
-  font-family: $second-ff;
+  @extend %font-second;
   @include font($hero-size, $hero-line-height, $bold);
   color: $header-color;
 }
 
 h2 {
-  font-family: inherit;
+  @extend %font-main;
   @include font($section-size, $section-line-height);
   color: $header-color;
 }
 
 h3 {
-  font-family: inherit;
+  @extend %font-main;
   @include font($tag-text-size, $tag-text-line-height);
   color: $header-color;
 }
 
 h4 {
-  font-family: inherit;
-  @include font($service-title-size, $service-line-height);
-  color: $header-color;
+  @extend %font-main;
+  @include font($service-title-size, $service-line-height, $semi-bold);
 }
 
 h5 {

@@ -11,6 +11,6 @@
 
 .header__buttons {
   &.button:not(:last-child) {
-    margin-right: 1.4rem;
+    margin: 0 1.4rem 0 0;
   }
 }

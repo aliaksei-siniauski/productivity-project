@@ -6,12 +6,24 @@
   display: flex;
 }
 
+%inline-flex {
+  display: inline-flex;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
 %flex-column {
   flex-direction: column;
 }
 
 %js-content-space-between {
   justify-content: space-between;
+}
+
+%js-content-center {
+  justify-content: center;
 }
 
 %al-items-center {
@@ -24,6 +36,10 @@
 
 %font-second {
   font-family: $second-ff;
+}
+
+%text-center {
+  text-align: center;
 }
 
 %transition {

@@ -28,6 +28,16 @@
 .link-button {
   display: inline-flex;
   @extend %al-items-center;
+  @extend %transition;
+  &:hover {
+    .icon--play {
+      filter: invert(57%) sepia(52%) saturate(2583%) hue-rotate(330deg)
+        brightness(104%) contrast(101%);
+    }
+    .link-button__text {
+      color: $hover-button-color;
+    }
+  }
 }
 .link-button__text {
   margin: 0 0 0 0.9rem;
@@ -35,7 +45,4 @@
   color: $accent-color;
   text-decoration-line: underline;
   @extend %transition;
-  &:hover {
-    color: $hover-button-color;
-  }
 }

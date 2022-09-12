@@ -1,0 +1,23 @@
+.services__container {
+  padding-bottom: 9rem;
+  background: url("../images/web-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.services__title {
+  @extend %text-center;
+  margin: 0 0 7rem 0;
+}
+
+.service__title {
+  margin: 0 0 1.6rem 0;
+}
+.service__description {
+  @include font($main-size, $second-line-height, $regular);
+}
+
+.services__button {
+  margin: 6rem 0 0;
+  @extend %text-center;
+}

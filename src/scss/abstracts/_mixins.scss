@@ -8,8 +8,9 @@
 }
 
 @mixin columns($width) {
-  @extend %flex-main;
-  @extend %justify-space-between;
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %js-content-space-between;
   > * {
     flex-basis: $width;
   }

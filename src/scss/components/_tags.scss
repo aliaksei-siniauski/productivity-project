@@ -1,0 +1,29 @@
+.tags {
+  @extend %flex;
+  @extend %flex-wrap;
+  > * {
+    margin: 0 0.7rem 0 0;
+  }
+}
+
+.tag {
+  padding: 0 1.4rem;
+  @extend %font-main;
+  @include font($tag-size, $main-line-height, $regular);
+  color: $text-color;
+  border-radius: $tag-radius;
+  @extend %transition;
+  @extend %cursor;
+  &--active {
+    background: $accent-color;
+    color: $light-color;
+  }
+  &--border {
+    background: $light-color;
+    border: 1px solid $tag-border-color;
+  }
+
+  &--background {
+    background: $tag-bg-color;
+  }
+}
