@@ -24,6 +24,6 @@ h4 {
 
 h5 {
   font-family: inherit;
-  @include font($contact-link-size, $service-line-height);
+  @include font($main-size, $second-line-height);
   color: $header-color;
 }
