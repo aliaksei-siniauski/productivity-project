@@ -10,15 +10,15 @@
   display: inline-block;
 }
 
-.layout-3-columns, .layout-4-columns, .worker, .hero__buttons, .hero__container, .header__container, .hamburger, .tags, .list, body {
+.layout-2-columns, .layout-3-columns, .layout-4-columns, .form__container, .contact__link, .worker, .hero__buttons, .hero__container, .header__container, .hamburger, .tags, .list, body {
   display: flex;
 }
 
-.icon-square {
+.icon-cicle, .icon-square {
   display: inline-flex;
 }
 
-.layout-3-columns, .layout-4-columns, .tags {
+.layout-2-columns, .layout-3-columns, .layout-4-columns, .form__container, .contact__link, .tags {
   flex-wrap: wrap;
 }
 
@@ -26,19 +26,19 @@
   flex-direction: column;
 }
 
-.layout-3-columns, .layout-4-columns, .hero__container, .header__container, body {
+.layout-2-columns, .layout-3-columns, .layout-4-columns, .form__container, .hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.icon-square {
+.icon-cicle, .icon-square {
   justify-content: center;
 }
 
-.hero__buttons, .hero__container, .header__container, .hamburger, .icon-square, .list, .link-button {
+.contact__link, .hero__buttons, .hero__container, .header__container, .hamburger, .icon-cicle, .icon-square, .list, .link-button {
   align-items: center;
 }
 
-.tag, .button, h5, h4, h3, h2, body {
+.input-field, .tag, .button, h5, h4, h3, h2, body {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -46,15 +46,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+.input-field, .contact__text, .products__description, .service__description {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
 .services__button, .services__title {
   text-align: center;
 }
 
-.product, .tag, .list__link, .link-button__text, .link-button, .button {
+.contact__link-item, .product, .tag, .list__link, .link-button__text, .link-button, .button {
   transition: ease-in-out 0.5s;
 }
 
-.product, .hamburger, .tag, .logo-svg, .list__link, .button {
+.contact__link, .product, .hamburger, .tag, .logo-svg, .list__link, .button {
   cursor: pointer;
 }
 
@@ -618,6 +625,16 @@ h5 {
   height: 17px;
   background-image: url("../icons/service-4.svg");
 }
+.icon--phone {
+  width: 13px;
+  height: 13px;
+  background-image: url("../icons/phone.svg");
+}
+.icon--mail {
+  width: 11px;
+  height: 8px;
+  background-image: url("../icons/mail.svg");
+}
 
 .icon-square {
   width: 50px;
@@ -636,6 +653,13 @@ h5 {
 }
 .icon-square--forth {
   background: #4dadf7;
+}
+
+.icon-cicle {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 .tags > * {
@@ -739,13 +763,6 @@ h5 {
   margin: 0 0 1.6rem 0;
 }
 
-.service__description {
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.6rem;
-}
-
 .services__button {
   margin: 6rem 0 0;
 }
@@ -824,12 +841,75 @@ h5 {
   right: -5.2rem;
 }
 
+.contact {
+  padding: 6.2rem 0 8rem;
+  background: #ffeee1;
+}
+
+.contact__content {
+  margin: 2rem 0 0;
+}
+
+.contact__text {
+  margin: 0 0 3.3rem 0;
+}
+
+.contact__link {
+  margin: 0 0 1.9rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.contact__link:hover .contact__link-item {
+  color: #ff9900;
+  text-decoration-line: underline;
+}
+
+.contact__link-item {
+  margin: 0 0 0 1.1rem;
+  color: #544837;
+  text-decoration: none;
+}
+
+/* Form */
+.form__container > * {
+  flex-basis: calc(50% - 10px);
+}
+
+.input-field {
+  margin: 0 0 1.9rem;
+  padding: 1rem 2.1rem;
+  color: #c6c6c6;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+}
+.input-field:focus {
+  border-color: #ff9900;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+}
+
+.contact__button .button {
+  min-width: 11.7rem;
+}
+
 .layout-4-columns > * {
   flex-basis: calc(25% - 50px);
 }
 
 .layout-3-columns > * {
   flex-basis: calc(33.3333333333% - 34px);
+}
+
+.layout-2-columns > * {
+  flex-basis: calc(50% - 75px);
 }
 
 /*# sourceMappingURL=main.css.map */

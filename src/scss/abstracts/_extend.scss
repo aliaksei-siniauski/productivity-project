@@ -38,6 +38,10 @@
   font-family: $second-ff;
 }
 
+%font-text {
+  @include font($main-size, $second-line-height, $regular);
+}
+
 %text-center {
   text-align: center;
 }
