@@ -1,0 +1,10 @@
+.icon {
+  @extend %inline-block;
+  @extend %cursor;
+
+  &--play {
+    width: 18px;
+    height: 19px;
+    background-image: url("../icons/play.svg");
+  }
+}

@@ -18,6 +18,14 @@
   align-items: center;
 }
 
+%font-main {
+  font-family: $main-ff;
+}
+
+%font-second {
+  font-family: $second-ff;
+}
+
 %transition {
   transition: ease-in-out 0.5s;
 }

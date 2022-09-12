@@ -1,7 +1,7 @@
 .button {
   @extend %inline-block;
   padding: 1.1rem 2.5rem 1.3rem;
-  font-family: inherit;
+  @extend %font-main;
   @include font($main-size, $button-line-height, $semi-bold);
   background: none;
   border: none;
@@ -11,7 +11,6 @@
   &--border {
     color: $button-second-color;
     border: 1px solid $button-border-color;
-    @extend %transition;
     &:hover {
       background: $button-border-color;
     }
@@ -20,5 +19,23 @@
     color: $light-color;
     background: $accent-color;
     border: 1px solid $accent-color;
+    &:hover {
+      background: $hover-button-color;
+    }
+  }
+}
+
+.link-button {
+  display: inline-flex;
+  @extend %al-items-center;
+}
+.link-button__text {
+  margin: 0 0 0 0.9rem;
+  @extend %font-second;
+  color: $accent-color;
+  text-decoration-line: underline;
+  @extend %transition;
+  &:hover {
+    color: $hover-button-color;
   }
 }

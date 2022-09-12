@@ -3,7 +3,7 @@ body {
   @extend %flex-column;
   @extend %js-content-space-between;
   min-height: 100vh;
-  font-family: $main-ff;
+  @extend %font-main;
   @include font($main-size, $main-line-height);
   color: $text-color;
   background: $light-color;
