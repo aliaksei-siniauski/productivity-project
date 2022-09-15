@@ -1,0 +1,16 @@
+.header {
+  padding: 1.6rem 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__container {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}
+
+.header__buttons {
+  &.button:not(:last-child) {
+    margin: 0 1.4rem 0 0;
+  }
+}

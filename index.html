@@ -6,9 +6,502 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productivity</title>
     <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/icons/favicon.ico"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/scss/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </div>
+        <div class="logo">
+          <a class="logo-link" href="index.html">
+            <object
+              class="logo-object"
+              data="src/icons/logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </a>
+        </div>
+        <!-- close logo -->
+        <nav class="navigation header__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a class="list__link" href="#home"> Home</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#services">Service</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#about">About</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#product">Product</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- close nav -->
+        <div class="header__buttons">
+          <button class="button button--border">Sign In</button>
+          <button class="button button--background">Sign Up</button>
+        </div>
+        <!-- close header__button -->
+      </div>
+      <!-- close container -->
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">The Design Thinking superpowers</h1>
+            <p class="hero__text">
+              Tools, tutorials, design and innovation experts, all in&nbsp;one
+              place! The most intuitive way to&nbsp;imagine your next user
+              experience.
+            </p>
+            <div class="hero__buttons">
+              <button class="button button--background">Get started</button>
+              <a class="link-button" href="#">
+                <span class="icon icon--play"></span>
+                <span class="link-button__text">Watch the Video</span>
+              </a>
+            </div>
+          </div>
+          <!-- close hero__content -->
+          <img
+            class="hero__img"
+            src="src/images/hero.png"
+            width="643"
+            height="495"
+            alt="hero"
+          />
+        </div>
+        <!-- close container -->
+      </section>
+      <section id="services" class="services">
+        <div class="container services__container">
+          <h2 class="services__title">
+            We design tools to unveil<br />
+            your superpowers
+          </h2>
+          <div class="layout-4-columns service__container">
+            <div class="service">
+              <div class="service__icon">
+                <span class="icon-square icon-square--first">
+                  <span class="icon icon--service-1"></span>
+                </span>
+              </div>
+              <h4 class="service__title">First click tests</h4>
+              <p class="service__description">
+                While most people enjoy casino gambling
+              </p>
+            </div>
+            <!-- close service -->
+            <div class="service">
+              <div class="service__icon">
+                <span class="icon-square icon-square--second">
+                  <span class="icon icon--service-2"> </span>
+                </span>
+              </div>
+              <h4 class="service__title">Design surveys</h4>
+              <p class="service__description">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+            <!-- close service -->
+            <div class="service">
+              <div class="service__icon">
+                <span class="icon-square icon-square--third">
+                  <span class="icon icon--service-3"> </span>
+                </span>
+              </div>
+              <h4 class="service__title">Preference tests</h4>
+              <p class="service__description">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+            <!-- close service -->
+            <div class="service">
+              <div class="service__icon">
+                <span class="icon-square icon-square--forth">
+                  <span class="icon icon--service-4"></span>
+                </span>
+              </div>
+              <h4 class="service__title">Five second tests</h4>
+              <p class="service__description">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+            <!-- close service -->
+          </div>
+          <!-- service__container -->
+          <div class="services__button">
+            <button class="button button--background">Sign Up now</button>
+          </div>
+        </div>
+        <!-- close container -->
+      </section>
+      <section id="product" class="products">
+        <div class="container">
+          <h2 class="section-title products__title">Marketing products</h2>
+          <p class="products__description">
+            Join&nbsp;40,000+ other marketers and get proven products
+            on&nbsp;email marketing
+          </p>
+          <!-- close product__description -->
+          <div class="products__tags tags">
+            <span class="tag tag--active">All</span>
+            <span class="tag tag--border">Art</span>
+            <span class="tag tag--border">Culture</span>
+            <span class="tag tag--border">Design</span>
+          </div>
+          <!-- close products__tags -->
+          <div class="layout-3-columns product__container">
+            <article class="product box-shadow">
+              <img src="src/images/products/product-1.jpg" alt="product" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Art</span>
+                  <span class="tag tag--background">Design</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+            </article>
+            <!-- product -->
+            <article class="product box-shadow">
+              <img src="src/images/products/product-2.jpg" alt="product" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Motivation Is&nbsp;The First Step To&nbsp;Success
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Culture</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+              <!-- close product-content -->
+            </article>
+            <!-- close product -->
+            <article class="product box-shadow">
+              <img src="src/images/products/product-3.jpg" alt="product-3" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Success Steps For Your Personal Or&nbsp;Business Life
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Culture</span>
+                  <span class="tag tag--background">Design</span>
+                  <span class="tag tag--background">Art</span>
+                </div>
+                <!-- close product__tags -->
+              </div>
+              <!-- close product__content -->
+            </article>
+            <article class="product box-shadow">
+              <img src="src/images/products/product-4.jpg" alt="product-4" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Success Steps For Your Personal Or&nbsp;Business Life Plus
+                  Funny Image on&nbsp;the Back
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Culture</span>
+                  <span class="tag tag--background">Design</span>
+                  <span class="tag tag--background">Art</span>
+                </div>
+                <!-- close product__tags -->
+              </div>
+              <!-- close product__content -->
+            </article>
+            <article class="product box-shadow">
+              <img src="src/images/products/product-5.jpg" alt="product" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Design</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+              <!-- close product-content -->
+            </article>
+            <article class="product box-shadow">
+              <img src="src/images/products/product-1.jpg" alt="product-1" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Art</span>
+                  <span class="tag tag--background">Design</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+              <!-- close product-content -->
+            </article>
+            <article class="product box-shadow">
+              <img src="src/images/products/product-2.jpg" alt="product-2" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Motivation Is&nbsp;The First Step To&nbsp;Success
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Culture</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+              <!-- close product-content -->
+            </article>
+            <article class="product box-shadow">
+              <img src="src/images/products/product-3.jpg" alt="product-3" />
+              <div class="product__content">
+                <h3 class="product__title">
+                  Success Steps For Your Personal Or&nbsp;Business Life
+                </h3>
+                <div class="product__tags tags">
+                  <span class="tag tag--background">Culture</span>
+                  <span class="tag tag--background">Design</span>
+                  <span class="tag tag--background">Art</span>
+                </div>
+                <!-- close product-tags -->
+              </div>
+              <!-- close product-content -->
+            </article>
+          </div>
+          <!-- prodcuts__container -->
+        </div>
+        <!-- close container -->
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title contact__title">About Us</h2>
+          <p class="about__description">
+            Your About Us&nbsp;page is&nbsp;vital. It’s&nbsp;often the first
+            stop in&nbsp;any user’s&nbsp;journey through a&nbsp;website
+            or&nbsp;blog. It&nbsp;also shouldn’t&nbsp;be&nbsp;their last,
+            because first impressions count online just as&nbsp;much
+            as&nbsp;they do&nbsp;in&nbsp;the real world. If&nbsp;your visitors
+            aren’t&nbsp;impressed, you can expect them to&nbsp;leave without
+            reading your awesome content or&nbsp;completing a&nbsp;conversion
+            action (e.g., signing up&nbsp;for your newsletter, making
+            a&nbsp;purchase).
+          </p>
+          <div class="layout-3-columns worker__container">
+            <div class="worker box-shadow">
+              <div class="worker__information">
+                <h5 class="worker__name">Kathy Rosenberg</h5>
+                <p class="worker__job">Product Mannager</p>
+                <a class="worker__email" href="mailto:kathyr@gmail.com"
+                  >kathyr@gmail.com</a
+                >
+              </div>
+              <!-- close worker-information -->
+              <img
+                class="worker__photo"
+                src="src/images/about/avatar-1.png"
+                alt="Alexandra Boyarskaya"
+              />
+            </div>
+            <!-- clsoe worker -->
+            <div class="worker box-shadow">
+              <div class="worker-information">
+                <h5 class="worker__name">Alexandra Boyarskaya</h5>
+                <p class="worker__job">Support Marketing Specialist</p>
+                <a class="worker__email" href="mailto:kathyr@gmail.com"
+                  >alexandrab@gmail.com</a
+                >
+                <img
+                  class="worker__photo"
+                  src="src/images/about/avatar-2.png"
+                  alt="Alexandra Boyarskaya"
+                />
+              </div>
+              <!-- close worker-information -->
+            </div>
+            <!-- clsoe worker -->
+            <div class="worker box-shadow">
+              <div class="worker-information">
+                <h5 class="worker__name">Melani Amini</h5>
+                <p class="worker__job">Photographer</p>
+                <a class="worker__email" href="mailto:melania@gmail.com"
+                  >melania@gmail.com</a
+                >
+              </div>
+              <!-- close worker-information -->
+              <img
+                class="worker__photo"
+                src="src/images/about/avatar-3.png"
+                alt="Melani Amini"
+              />
+            </div>
+            <!-- clsoe worker -->
+          </div>
+          <!-- close worker__container -->
+        </div>
+        <!-- close container -->
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="contact__title">Contact Us</h2>
+          <div class="layout-2-columns contact__container">
+            <div class="contact__content">
+              <p class="contact__text">
+                Your About Us&nbsp;page is&nbsp;vital. It&rsquo;s often the
+                first stop in&nbsp;any user&rsquo;s journey through
+                a&nbsp;website or&nbsp;blog. It&nbsp;also shouldn&rsquo;t
+                be&nbsp;their last, because first impressions count online just
+                as&nbsp;much as&nbsp;they do&nbsp;in&nbsp;the real world.
+                If&nbsp;your visitors aren&rsquo;t impressed, you can expect
+                them to&nbsp;leave without reading your awesome content
+                or&nbsp;completing a&nbsp;conversion action (e.g., signing
+                up&nbsp;for your newsletter, making a&nbsp;purchase).
+              </p>
+              <div class="contact__link">
+                <span class="icon-cicle"
+                  ><span class="icon icon--phone"></span>
+                </span>
+                <a class="contact__link-item" href="tel:+375(22)345-00-99"
+                  >+375 (22) 345-00-99</a
+                >
+              </div>
+              <!-- close contact__link" -->
+              <div class="contact__link">
+                <span class="icon-cicle"
+                  ><span class="icon icon--mail"></span>
+                </span>
+                <a class="contact__link-item" href="mailto:emailname@gmail.com"
+                  >emailname@gmail.com</a
+                >
+              </div>
+              <!-- close contact__link" -->
+            </div>
+            <!-- close contact__content -->
+            <div class="contact__form">
+              <form action="https://formspree.io/f/xgeqoqje" method="POST">
+                <div class="layout-2-columns form__container">
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                  />
+                  <input
+                    class="input-field"
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                  />
+                </div>
+                <textarea
+                  class="input-field"
+                  name="question"
+                  placeholder="What do you want to ask?"
+                ></textarea>
+              </form>
+              <div class="contact__button">
+                <button type="submit" class="button button--background">
+                  Send
+                </button>
+              </div>
+            </div>
+            <!-- contact__form -->
+          </div>
+          <!-- close contact__container -->
+        </div>
+        <!-- close container -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logo">
+          <a class="logo-link" href="#">
+            <object
+              class="logo-object"
+              data="src/icons/logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </a>
+        </div>
+        <!-- logo -->
+        <div class="layout-3-columns footer-navigation">
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Quick Links</h4>
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a href="#about" class="footer-navigation__link">About Us</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Blog</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#contact" class="footer-navigation__link">Contact</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">FAQ</a>
+              </li>
+            </ul>
+            <!-- close footer-navigation__list -->
+          </div>
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Legal Stuff</h4>
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Disclaimer</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Financing</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Privacy Policy</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Terms of Service</a>
+              </li>
+            </ul>
+            <!-- close footer-navigation__list -->
+          </div>
+          <!-- close footer-navigation -->
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">Quick Links</h4>
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a href="#about" class="footer-navigation__link">About Us</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">Blog</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#contact" class="footer-navigation__link">Contact</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">FAQ</a>
+              </li>
+            </ul>
+            <!-- close footer-navigation__list -->
+          </div>
+          <!-- footer-navigation -->
+        </div>
+      </div>
+      <!-- close container -->
+    </footer>
+  </body>
 </html>

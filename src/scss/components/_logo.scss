@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 16rem;
+  height: 3rem;
+}
+.logo-svg {
+  @extend %cursor;
+  &:hover {
+    .logo-fill {
+      fill: $accent-color;
+    }
+  }
+}

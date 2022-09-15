@@ -23,11 +23,18 @@
 @import "components/button";
 @import "components/nav";
 @import "components/logo";
-@import "components/icons";
+@import "components/icon";
 @import "components/tags";
 @import "components/hamburger";
+@import "components/section";
 
 /* Layout  */
 
 @import "layout/header";
+@import "layout/hero";
+@import "layout/services";
+@import "layout/products";
+@import "layout/about";
+@import "layout/contacts";
 @import "layout/footer";
+@import "layout/columns";

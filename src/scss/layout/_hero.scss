@@ -1,0 +1,36 @@
+.hero {
+  padding: 3rem 0;
+}
+
+.hero__container {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}
+
+.hero__content {
+  padding: 0 0.65rem 0 0;
+}
+
+.hero__title {
+  margin: 0 0 3rem;
+}
+
+.hero__text {
+  max-width: 487px;
+  font-family: $second-ff;
+  @include font($text-size, $main-line-height, $regular);
+  font-weight: $regular;
+  margin: 0 0 4.5rem;
+}
+
+.hero__buttons {
+  @extend %flex;
+  @extend %al-items-center;
+  > * {
+    margin: 0 4.4rem 0 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

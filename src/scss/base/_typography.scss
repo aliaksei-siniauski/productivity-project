@@ -1,0 +1,28 @@
+h1 {
+  @extend %font-second;
+  @include font($hero-size, $hero-line-height, $bold);
+  color: $header-color;
+}
+
+h2 {
+  @extend %font-main;
+  @include font($section-size, $section-line-height);
+  color: $header-color;
+}
+
+h3 {
+  @extend %font-main;
+  @include font($tag-text-size, $tag-text-line-height);
+  color: $header-color;
+}
+
+h4 {
+  @extend %font-main;
+  @include font($service-title-size, $service-line-height, $semi-bold);
+}
+
+h5 {
+  @extend %font-main;
+  @include font($main-size, $second-line-height);
+  color: $header-color;
+}

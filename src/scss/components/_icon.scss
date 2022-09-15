@@ -1,0 +1,82 @@
+.icon {
+  @extend %inline-block;
+
+  &--play {
+    width: 18px;
+    height: 19px;
+    background-image: url("../icons/play.svg");
+  }
+
+  &--service-1 {
+    width: 12px;
+    height: 17px;
+    background-image: url("../icons/service-1.svg");
+  }
+
+  &--service-2 {
+    width: 18px;
+    height: 12px;
+    background-image: url("../icons/service-2.svg");
+  }
+
+  &--service-3 {
+    width: 17px;
+    height: 15px;
+    background-image: url("../icons/service-3.svg");
+  }
+
+  &--service-4 {
+    width: 15px;
+    height: 17px;
+    background-image: url("../icons/service-4.svg");
+  }
+
+  &--phone {
+    width: 13px;
+    height: 13px;
+    background-image: url("../icons/phone.svg");
+  }
+
+  &--mail {
+    width: 11px;
+    height: 8px;
+    background-image: url("../icons/mail.svg");
+  }
+}
+
+.icon-square {
+  @extend %inline-flex;
+  @extend %inline-flex;
+  @extend %js-content-center;
+  @extend %al-items-center;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 3rem;
+  border-radius: $icon-radius;
+
+  &--first {
+    background: $service-color-1;
+  }
+
+  &--second {
+    background: $service-color-2;
+  }
+
+  &--third {
+    background: $service-color-3;
+  }
+
+  &--forth {
+    background: $service-color-4;
+  }
+}
+
+.icon-cicle {
+  width: 25px;
+  height: 25px;
+  @extend %inline-flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: $light-color;
+  border-radius: 50%;
+}

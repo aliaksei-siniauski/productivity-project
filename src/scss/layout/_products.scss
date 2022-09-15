@@ -1,0 +1,42 @@
+.products__description {
+  margin: 0 0 2.4rem;
+  @extend %font-text;
+}
+
+.products__tags {
+  margin: 0 0 3rem;
+}
+
+.product {
+  @extend %flex-column;
+  @extend %transition;
+  @extend %cursor;
+  &__hidden {
+    display: none;
+  }
+  &:hover {
+    .product__title {
+      color: $accent-color;
+    }
+  }
+}
+
+.product__container {
+  > * {
+    margin-bottom: 30px;
+  }
+}
+
+.product__content {
+  @extend %flex-column;
+  flex-grow: 1;
+  padding: 2.4rem 3.4rem 2.6rem;
+}
+
+.product__title {
+  margin: 0 0 3rem;
+}
+
+.product__tags {
+  padding: 0 0 2.6rem;
+}

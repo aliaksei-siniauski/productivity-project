@@ -1,0 +1,19 @@
+.hamburger {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %cursor;
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.hamburger__line {
+  width: 31px;
+  height: 3px;
+  background: $button-second-color;
+  border-radius: 0.5rem;
+  &:not(:last-child) {
+    margin: 0 0 0.8rem 0;
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-space-between;
+  min-height: 100vh;
+  @extend %font-main;
+  @include font($main-size, $main-line-height);
+  color: $text-color;
+  background: $light-color;
+}
+
+.box-shadow {
+  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.05));
+}
